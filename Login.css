@@ -1,0 +1,44 @@
+*{
+    color: white;
+    background-color: #34495e;
+    font-size: 20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.box{
+    text-align: center;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+.box h1{
+    font-size: 30px;
+}
+.box input[type = "text"],.box input[type = "password"]{
+    border: 2px solid green;
+    margin: 10px auto;
+    text-align: center;
+    padding: 14px 10px;
+    border-radius: 40px;
+    outline: none;
+    width: 200px;
+    transition: 0.25s;
+    
+}
+.box input[type = "text"]:hover,.box input[type = "password"]:hover{
+    width: 280px;  
+}
+.box input[type = "submit"]{
+    border: 2px solid green;
+    margin: 10px auto;
+    text-align: center;
+    padding: 14px 20px;   /*tamaño de la caja*/
+    border-radius: 40px;
+    outline: none;  
+    cursor: pointer;   /*hace que te aparezca el cursor como manito*/
+    transition: 0.25s;  /*animacion*/
+}
+.box input[type = "submit"]:hover{
+    background-color: green;
+}
+
