@@ -16,6 +16,7 @@ app.set("view engine", "ejs");
 //Para que reconozca el html como objetos
 app.use(express.json());
 app.use(express.urlencoded({extended:false}));
+app.use(express.static("public"));
 
 //Crear ruta con el html
 app.get("/", function(answer,request){

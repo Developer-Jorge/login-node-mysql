@@ -14,6 +14,23 @@
 .box h1{
     font-size: 30px;
 }
+.box input[type = "text"],.box input[type = "email"]{
+    border: 2px solid green;
+    margin: 10px auto;
+    text-align: center;
+    padding: 14px 10px;
+    border-radius: 40px;
+    outline: none;
+    width: 200px;
+    transition: 0.25s;
+    
+}
+.box input[type = "text"]:hover,.box input[type = "email"]:hover{
+    width: 280px;  
+}
+
+
+
 .box input[type = "text"],.box input[type = "password"]{
     border: 2px solid green;
     margin: 10px auto;
