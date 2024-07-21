@@ -27,17 +27,23 @@ app.get("/", function(answer,request){
 app.post("/value", function(answer,request){
     const data = answer.body;
 
+    let first_name = data.first_name;
+    let last_name = data.last_name;
+    let birthday = data.birthday;
+
     let email = data.email;
     let password = data.password;
 
+
     //Guardar los datos en la base de datos
-    let insertar = "INSERT INTO user (email,password) VALUES ('"+email+"','"+password+"')";
+    let insertar = "INSERT INTO user (first_name,last_name,birthday,email,password) VALUES ('"+first_name+"','"+last_name+"','"+birthday+"','"+email+"','"+password+"')";
 
     conexion.query(insertar, function(error){
         if(error) throw error;
         console.log("Datos cargados correctamente");
     });
 });
+
 
 
 
